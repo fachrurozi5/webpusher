@@ -54,6 +54,11 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+	define('APP_ID', '199575');
+	define('APP_KEY', '552f6457d1d3aedb4b11');
+	define('APP_SECRET', 'e09fe7fa08fa7df16ced');
+
+
 
 /*
  *---------------------------------------------------------------

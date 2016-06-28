@@ -22,4 +22,14 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+	public function testing()
+	{
+
+		$pusher = new Pusher(APP_KEY, APP_SECRET, APP_ID);
+
+		$pusher->trigger('my-channel', 'my_event', 'hello world Boy' );
+
+		echo "Pusher Test";
+	}
 }
