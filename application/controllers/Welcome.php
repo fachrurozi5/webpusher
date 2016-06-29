@@ -20,7 +20,20 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+
+		$this->load->add_package_path(APPPATH.'third_party/bower');
+    $this->load->library('bower');
+    $this->load->remove_package_path(APPPATH.'third_party/bower');
+
+		$css = $this->bower->css('page');
+		$css[] = $this->bower->add('http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700');
+
+		$js = $this->bower->js('page');
+
+    $this->load->view('welcome_message', [
+        'css' => $css,
+        'js' => $js
+    ]);
 	}
 
 	public function testing()

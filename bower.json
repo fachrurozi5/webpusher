@@ -1,0 +1,23 @@
+{
+  "name": "webpusher",
+  "homepage": "https://github.com/fachrurozi5/webpusher",
+  "authors": [
+    "Fachru Rozi <arieffachrurozi@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.php",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.6.3",
+    "jquery": "^3.0.0",
+    "pusher-websocket-iso": "pusher#^3.1.0",
+    "vue": "^1.0.26"
+  }
+}

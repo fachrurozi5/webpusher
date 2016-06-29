@@ -4,9 +4,150 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f7e5dd5efa296d3dbbcc7a40465aa1fc",
-    "content-hash": "c78b6958e5949e9267a290938fdd22a7",
+    "hash": "cb7970b6638ba97207311ba6e915ea69",
+    "content-hash": "2ce2345b9b1829e3e18c72f5910424fe",
     "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "ImageCMS",
+                "MODX Evo",
+                "Mautic",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2016-04-13 19:46:30"
+        },
+        {
+            "name": "maltyxx/bower",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maltyxx/bower.git",
+                "reference": "21242d176a8996e339e2e29bc46c8a1c2c9c6660"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maltyxx/bower/zipball/21242d176a8996e339e2e29bc46c8a1c2c9c6660",
+                "reference": "21242d176a8996e339e2e29bc46c8a1c2c9c6660",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "1.0.*",
+                "php": ">=5.3.0"
+            },
+            "type": "codeigniter-third-party",
+            "extra": {
+                "installer-name": "bower"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Yoann Vanitou",
+                    "email": "yvanitou@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Bower for CodeIgniter 3",
+            "homepage": "https://github.com/maltyxx/bower",
+            "keywords": [
+                "bower",
+                "codeigniter"
+            ],
+            "time": "2016-04-22 15:00:00"
+        },
         {
             "name": "pusher/pusher-php-server",
             "version": "v2.4.1",
