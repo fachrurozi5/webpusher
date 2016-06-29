@@ -1,5 +1,4 @@
 var todos = [
-  { text: 'Add some todos' },
   { text: 'Add some todos' }
 ]
 
