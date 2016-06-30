@@ -31,7 +31,6 @@ var pusher = new Pusher('552f6457d1d3aedb4b11', {
 
 var channel = pusher.subscribe('test_channel');
   channel.bind('my_event', function(data) {
-    alert(data.message);
     todos.push(
       {text: data.message}
     )
